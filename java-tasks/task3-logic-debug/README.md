@@ -41,7 +41,9 @@ Open `TemperatureConverter.java`. The class has three methods:
 
 ## How To Run The Tests
 
-From a terminal inside this folder:
+With any file from this folder open in VS Code, press **Ctrl + Shift + B**.
+
+The terminal will open and run the tests automatically. Alternatively, open a terminal inside this folder and run:
 
 ```bash
 javac TemperatureConverter.java TemperatureConverterTest.java

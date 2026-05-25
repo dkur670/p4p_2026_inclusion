@@ -5,7 +5,7 @@ This repository contains four Java programming tasks for use with **Visual Studi
 Each task lives in its own folder and includes:
 - A **starter Java file** for you to work in
 - A **README** with instructions, hints, and examples
-- A **test file** you run in the terminal to check your work
+- A **test file** that runs automatically to check your work
 
 ---
 
@@ -20,29 +20,52 @@ Each task lives in its own folder and includes:
 
 ---
 
-## How To Run Tests (all tasks)
+## How To Run Tests
 
-Each task follows the same pattern. From a terminal inside the task folder:
+### Option 1 — Keyboard shortcut (quickest)
 
-```bash
-javac *.java
-java <TestClassName>
+With any file from a task folder open in VS Code, press:
+
+```
+Ctrl + Shift + B
 ```
 
-For example, for Task 1:
+The terminal will open and show PASS / FAIL for every test.
+
+### Option 2 — Terminal commands
+
+Open the VS Code terminal (`Ctrl + `` ` ``), navigate into the task folder, then:
 
 ```bash
+# Task 1
 cd task1-substring
 javac SubstringTask.java SubstringTaskTest.java
 java SubstringTaskTest
+
+# Task 2
+cd task2-syntax-debug
+javac ShoppingCart.java ShoppingCartTest.java
+java ShoppingCartTest
+
+# Task 3
+cd task3-logic-debug
+javac TemperatureConverter.java TemperatureConverterTest.java
+java TemperatureConverterTest
+
+# Task 4
+cd task4-refactoring
+javac TransactionProcessor.java TransactionProcessorTest.java
+java TransactionProcessorTest
 ```
 
-A passing run looks like:
+### What passing output looks like
 
 ```
 PASS  lengthOfLongestSubstring("abcabcbb") = 3
 PASS  lengthOfLongestSubstring("bbbbb") = 1
 ...
+----------------------------------------
+Results: 12 passed, 0 failed out of 12 tests.
 All tests passed! Task 1 complete.
 ```
 
@@ -50,7 +73,7 @@ All tests passed! Task 1 complete.
 
 ## Tips
 
-- Read the `README.md` inside each task folder before you start.
+- Read the `README.md` inside each task folder **before you start**.
 - Use **Claude Code** to help generate, debug, or refactor code — that's the point!
 - Think aloud as you work — share what you're noticing and why you're making decisions.
 - If you're stuck, check the hints in the README first, then ask Claude Code.
@@ -59,5 +82,6 @@ All tests passed! Task 1 complete.
 
 ## Requirements
 
-- Java 11 or later
-- Visual Studio Code with Claude Code enabled
+- Java 11 or later (`java -version` to check)
+- Visual Studio Code with the **Extension Pack for Java** installed
+- **Claude Code** extension installed and signed in

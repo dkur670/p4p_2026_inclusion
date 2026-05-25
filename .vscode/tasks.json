@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Tests",
+      "type": "shell",
+      "command": "javac *.java; if ($LASTEXITCODE -eq 0) { $t = (Get-Item *Test.java).BaseName; java $t } else { Write-Host 'Fix the compile errors above, then run again.' -ForegroundColor Yellow }",
+      "options": {
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-NonInteractive", "-Command"]
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "echo": false
+      },
+      "problemMatcher": []
+    }
+  ]
+}

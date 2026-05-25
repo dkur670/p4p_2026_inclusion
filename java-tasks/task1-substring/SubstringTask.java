@@ -1,22 +1,20 @@
 import java.util.*;
 
 public class SubstringTask {
-
     /**
      * Returns the length of the longest substring without repeating characters.
      *
      * Examples:
-     *   "abcabcbb" → 3  (substring "abc")
-     *   "bbbbb"    → 1  (substring "b")
-     *   "pwwkew"   → 3  (substring "wke")
-     *   ""         → 0
+     *   "abcabcbb" → 3  (the answer is "abc")
+     *   "bbbbb"    → 1  (the answer is "b")
+     *   "pwwkew"   → 3  (the answer is "wke")
+     *   ""         → 0  (empty string)
      *
      * @param s the input string
-     * @return length of the longest substring without repeating characters
+     * @return the length of the longest substring with no repeated characters
      */
     public int lengthOfLongestSubstring(String s) {
-        // TODO: Implement your solution here
+        // Implement your solution here
         return 0;
     }
-
 }
