@@ -16,7 +16,7 @@ public class TemperatureConverter {
      * Formula: (celsius × 9/5) + 32
      */
     public static double celsiusToFahrenheit(double celsius) {
-        return celsius * 9 / 5 + 32;   // This one is correct — don't change it
+        return celsius * 9 / 5 + 32;   
     }
 
     /**
@@ -26,7 +26,7 @@ public class TemperatureConverter {
      * Bug 1 is in this method.
      */
     public static double fahrenheitToCelsius(double fahrenheit) {
-        return (fahrenheit - 32) * 9 / 5;  // Bug: wrong formula
+        return (fahrenheit - 32) * 9 / 5;  
     }
 
     /**
@@ -39,7 +39,7 @@ public class TemperatureConverter {
      * Bug 2 is in this method.
      */
     public static String classifyTemperature(double celsius) {
-        if (celsius > 0) {          // Bug: wrong comparison direction
+        if (celsius > 0) {         
             return "Freezing";
         } else if (celsius > 15) {
             return "Cold";
@@ -50,9 +50,8 @@ public class TemperatureConverter {
         }
     }
 
-    // ---------------------------------------------------------------
+    
     // Do not modify main() — run it to manually check your fixes
-    // ---------------------------------------------------------------
     public static void main(String[] args) {
         System.out.println(celsiusToFahrenheit(100));   // Expected: 212.0
         System.out.println(fahrenheitToCelsius(212));   // Expected: 100.0

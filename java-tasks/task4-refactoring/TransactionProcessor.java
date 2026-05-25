@@ -15,9 +15,9 @@ import java.util.*;
  */
 public class TransactionProcessor {
 
-    // ---------------------------------------------------------------
+    
     // Original method — refactor this
-    // ---------------------------------------------------------------
+
 
     /**
      * Reads a CSV file of transactions, calculates a running balance,
@@ -53,9 +53,9 @@ public class TransactionProcessor {
         System.out.println("Final Balance: $" + total);
     }
 
-    // ---------------------------------------------------------------
+    
     // TODO: Add your extracted helper methods below this line
-    // ---------------------------------------------------------------
+   
 
     // Suggested helpers (you can name them differently):
     //
@@ -72,9 +72,8 @@ public class TransactionProcessor {
     //       → prints the "Processed: ..." line for a single transaction
 
 
-    // ---------------------------------------------------------------
+    
     // Do not modify main()
-    // ---------------------------------------------------------------
     public static void main(String[] args) throws IOException {
         // Creates a small test file and runs the processor
         File temp = File.createTempFile("transactions", ".csv");

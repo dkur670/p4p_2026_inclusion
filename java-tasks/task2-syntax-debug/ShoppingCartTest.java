@@ -36,9 +36,9 @@ public class ShoppingCartTest {
         }
     }
 
-    // ---------------------------------------------------------------
+    
     // Helper
-    // ---------------------------------------------------------------
+   
 
     /** Capture System.out output from a Runnable. */
     static String captureOutput(Runnable r) {
@@ -59,10 +59,8 @@ public class ShoppingCartTest {
         failed++;
     }
 
-    // ---------------------------------------------------------------
+    
     // Tests
-    // ---------------------------------------------------------------
-
     static void test_addItemUpdatesTotal() {
         ShoppingCart cart = new ShoppingCart();
         cart.addItem("Apple", 1.50);

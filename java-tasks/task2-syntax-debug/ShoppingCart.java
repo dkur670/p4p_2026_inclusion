@@ -14,12 +14,12 @@ public class ShoppingCart {
     private double totalPrice = 0.0;
 
     public void addItem(String item, double price) {
-        items.add(item)          // Bug 1: something is missing at the end of this line
+        items.add(item)          
         totalPrice += price;
     }
 
     public void removeItem(String item, double price) {
-        if (items.contains(item) {   // Bug 2: look carefully at this condition
+        if (items.contains(item) {   
             items.remove(item);
             totalPrice -= price;
         }
@@ -30,8 +30,7 @@ public class ShoppingCart {
         for (String item : items) {
             System.out.println("- " + item);
         }
-        System.out.println("Total: $" + totalPrice)   // Bug 3: something is missing here
-    }
+        System.out.println("Total: $" + totalPrice)   
 
     // ---------------------------------------------------------------
     // Do not modify main() — it is used by the test runner
