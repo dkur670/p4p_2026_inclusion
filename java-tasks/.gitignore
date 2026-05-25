@@ -1,0 +1,19 @@
+# Compiled output
+*/out/
+*.class
+
+# VS Code Java settings (auto-generated)
+.classpath
+.project
+.settings/
+.factorypath
+
+# IntelliJ
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
