@@ -1,2 +1,2 @@
 # p4p_2026_inclusion
-Project #76: Investigating inclusion of software engineering tools and practices - using claude code to investigate potential inbuilt biases in-depth by designing a lab experimens. A set of recommended changes to the selected software tool or practice will be derived through this investigationtion.
+Project #76: Investigating inclusion of software engineering tools and practices - using Claude Code to investigate potential inbuilt biases in-depth by designing a lab experiment. A set of recommended changes to the Claude Code software tool or practice will be derived from this investigation.

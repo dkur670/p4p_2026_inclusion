@@ -49,14 +49,6 @@ Final Balance: $120
 
 ---
 
-## Hints
-
-- **Hint 1:** Identify the separate responsibilities — reading, parsing, calculating, printing. Each becomes its own method.
-- **Hint 2:** You can ask Claude Code to extract a method for you — highlight the code you want to move and ask it to create a helper.
-- **Hint 3:** After refactoring, run the tests — they check both that the output is still correct *and* that you've actually added helper methods.
-
----
-
 ## How To Run The Tests
 
 With any file from this folder open in VS Code, press **Ctrl + Shift + B**.

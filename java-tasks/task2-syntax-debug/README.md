@@ -25,14 +25,6 @@ The class has three methods:
 
 ---
 
-## Hints
-
-- **Hint 1:** Try compiling first — the error message will point you to a line number.
-- **Hint 2:** Look carefully at the end of each statement — is anything missing?
-- **Hint 3:** Check that every opening bracket or parenthesis has a matching closing one.
-
----
-
 ## How To Run The Tests
 
 With any file from this folder open in VS Code, press **Ctrl + Shift + B**.
@@ -44,7 +36,7 @@ javac ShoppingCart.java ShoppingCartTest.java
 java ShoppingCartTest
 ```
 
-> ⚠️ If `ShoppingCart.java` still has syntax errors, the `javac` step will fail.  
+> If `ShoppingCart.java` still has syntax errors, the `javac` step will fail.  
 > Fix the compile errors first, then run the tests again.
 
 When all bugs are fixed you will see:
