@@ -40,9 +40,9 @@ public class TransactionProcessorTest {
         }
     }
 
-    // ---------------------------------------------------------------
+   
     // Helpers
-    // ---------------------------------------------------------------
+  
 
     static File writeTempFile(String... lines) throws IOException {
         File f = File.createTempFile("txn_test", ".csv");
@@ -76,9 +76,9 @@ public class TransactionProcessorTest {
         failed++;
     }
 
-    // ---------------------------------------------------------------
+    
     // Correctness tests (behaviour must not change after refactoring)
-    // ---------------------------------------------------------------
+    
 
     static void test_basicDepositAndWithdrawal() throws Exception {
         File f = writeTempFile("deposit,100", "withdrawal,30", "deposit,50");
@@ -136,9 +136,8 @@ public class TransactionProcessorTest {
         }
     }
 
-    // ---------------------------------------------------------------
+    
     // Structure tests — checking you actually refactored
-    // ---------------------------------------------------------------
 
     /**
      * Counts public/private/protected methods on TransactionProcessor

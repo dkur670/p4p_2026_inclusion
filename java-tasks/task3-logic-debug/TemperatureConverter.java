@@ -23,7 +23,6 @@ public class TemperatureConverter {
      * Converts Fahrenheit to Celsius.
      * Formula: (fahrenheit − 32) × 5 / 9
      *
-     * Bug 1 is in this method.
      */
     public static double fahrenheitToCelsius(double fahrenheit) {
         return (fahrenheit - 32) * 9 / 5;  
@@ -36,7 +35,7 @@ public class TemperatureConverter {
      *   15–24     → "Warm"
      *   25+       → "Hot"
      *
-     * Bug 2 is in this method.
+   
      */
     public static String classifyTemperature(double celsius) {
         if (celsius > 0) {         

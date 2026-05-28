@@ -32,9 +32,9 @@ public class ShoppingCart {
         }
         System.out.println("Total: $" + totalPrice)   
 
-    // ---------------------------------------------------------------
+  
     // Do not modify main() — it is used by the test runner
-    // ---------------------------------------------------------------
+   
     public static void main(String[] args) {
         ShoppingCart cart = new ShoppingCart();
         cart.addItem("Apple", 1.50);
