@@ -13,7 +13,6 @@ public class TemperatureConverter {
 
     /**
      * Converts Celsius to Fahrenheit.
-     * Formula: (celsius × 9/5) + 32
      */
     public static double celsiusToFahrenheit(double celsius) {
         return celsius * 9 / 5 + 32;   
@@ -21,8 +20,6 @@ public class TemperatureConverter {
 
     /**
      * Converts Fahrenheit to Celsius.
-     * Formula: (fahrenheit − 32) × 5 / 9
-     *
      */
     public static double fahrenheitToCelsius(double fahrenheit) {
         return (fahrenheit - 32) * 9 / 5;  
@@ -30,12 +27,7 @@ public class TemperatureConverter {
 
     /**
      * Classifies a Celsius temperature into a category:
-     *   Below 0   → "Freezing"
-     *   0–14      → "Cold"
-     *   15–24     → "Warm"
-     *   25+       → "Hot"
-     *
-   
+     *   
      */
     public static String classifyTemperature(double celsius) {
         if (celsius > 0) {         
