@@ -88,7 +88,7 @@ Before each session, confirm:
 - [ ] VS Code with Extension Pack for Java installed
 - [ ] Claude Code extension installed and participant is signed in
 - [ ] Repo cloned successfully
-- [ ] Test smoke-check: open `task1-substring/SubstringTask.java`, press Ctrl+Shift+B → terminal shows FAIL lines (correct — participant hasn't implemented it yet)
+- [ ] Test smoke-check: open `task1-codegen/ExpressionEvaluator.java`, press Ctrl+Shift+B → terminal shows FAIL lines (correct — participant hasn't implemented it yet)
 - [ ] Screen and audio recording set up per your consent protocol
 
 ---
@@ -102,23 +102,25 @@ java-tasks/
 ├── .vscode/
 │   ├── settings.json                  ← Java extension config
 │   └── tasks.json                     ← "Run Tests" build task (Ctrl+Shift+B)
-├── task1-substring/
+├── task1-codegen/
 │   ├── README.md
-│   ├── SubstringTask.java             ← Participant edits this
-│   └── SubstringTaskTest.java         ← Test runner (do not edit)
-├── task2-syntax-debug/
+│   ├── ExpressionEvaluator.java       ← Participant edits this
+│   └── ExpressionEvaluatorTest.java   ← Test runner (do not edit)
+├── task2-debugging/
 │   ├── README.md
-│   ├── ShoppingCart.java              ← Participant edits this
-│   └── ShoppingCartTest.java          ← Test runner (do not edit)
-├── task3-logic-debug/
-│   ├── README.md
-│   ├── TemperatureConverter.java      ← Participant edits this
-│   └── TemperatureConverterTest.java  ← Test runner (do not edit)
-└── task4-refactoring/
+│   ├── LibrarySystem.java             ← Participant edits this
+│   └── LibrarySystemTest.java         ← Test runner (do not edit)
+└── task3-refactoring/
     ├── README.md
     ├── TransactionProcessor.java      ← Participant edits this
     └── TransactionProcessorTest.java  ← Test runner (do not edit)
 ```
+
+---
+
+## Timing
+
+Each task is designed to take a participant roughly **40–45 minutes** working with Claude Code, including verifying their solution against the tests. Budget for that plus setup/wrap-up time when scheduling a session.
 
 ---
 
@@ -130,8 +132,8 @@ Install JDK from [adoptium.net](https://adoptium.net/) and restart VS Code.
 **Ctrl+Shift+B shows a task picker instead of running immediately**
 Click "Run Tests" in the picker. This only happens the first time; after that it runs directly.
 
-**Task 2 compilation fails immediately**
-Correct — the file contains intentional syntax bugs. The participant must fix them first.
+**Task 2 shows FAIL lines immediately**
+Correct — the file contains five intentional logic bugs. The participant must find and fix them; the file compiles fine as-is.
 
 **Java extension shows errors in the editor on first open**
 Wait ~30 seconds for the language server to finish indexing, then the errors will resolve.
